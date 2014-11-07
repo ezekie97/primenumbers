@@ -1,3 +1,10 @@
+'''
+    The follwing line will make it easier to run this script on other
+    machines as it will automatically search for the proper location
+    of the Python directory. This line will figure out the correct
+    location of python and use that as its default interpreter.
+'''
+#!/usr/bin/env python
 __author__ = "William Ezekiel"
 
 __date__ = "5 November 2014"
