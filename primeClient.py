@@ -12,7 +12,7 @@ class primesClient:
         num = int(input("Please type a number: "))
         return self.c.root.findPrimes(num)
 client = primesClient()
-client.getPrimeService()
+client.getPrimesService()
     
 
     
