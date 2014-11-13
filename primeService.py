@@ -11,11 +11,11 @@ class primesService(rpyc.Service):
     """ provided a service that finds all prime numbers <= a given number"""
 
     def on_connect(self):
-        print("CONNECT")
+        print("Connected")
         pass
 
     def on_disconnect(self):
-        print("DC'D")
+        print("Bye")
         pass
       
     def exposed_findPrimes(self,num):
@@ -60,5 +60,6 @@ class primesService(rpyc.Service):
         return True
 if __name__ == "__main__":
     from rpyc.utils.server import ThreadedServer
+    print("Starting Server")
     t = ThreadedServer(primesService, port = 12345)
     t.start()
