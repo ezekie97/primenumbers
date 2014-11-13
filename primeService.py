@@ -11,9 +11,11 @@ class primesService(rpyc.Service):
     """ provided a service that finds all prime numbers <= a given number"""
 
     def on_connect(self):
+        print("CONNECT")
         pass
 
     def on_disconnect(self):
+        print("DC'D")
         pass
       
     def exposed_findPrimes(self,num):
